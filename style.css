@@ -353,7 +353,7 @@ nav a, .resume-sidebar a{
 .project-content-overlay {
     border-radius: 25px;
     position: absolute;
-    width: inherit;
+    width: 100%;
     height: inherit;
     background-color: #0000005f;
     display: flex;
