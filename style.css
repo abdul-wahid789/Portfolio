@@ -119,6 +119,7 @@ nav a, .resume-sidebar a{
 .about-me {
     display: flex;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .intro h1 {
@@ -136,9 +137,9 @@ nav a, .resume-sidebar a{
 }
 
 .about-me-text {
-    width: 50%;
+    width: 40%;
     justify-content: center;
-    padding-left: 50px;
+    margin-left: 50px;
     font-family: var(--pr-f);
 }
 
@@ -168,7 +169,7 @@ nav a, .resume-sidebar a{
 }
 
 .about-me-text ul li h4 {
-    width: 20%;
+    width: 95px;
 }
 
 .about-me-text ul li p {
@@ -246,6 +247,7 @@ nav a, .resume-sidebar a{
 .edu {
     font-family: var(--pr-f);
     margin-top: 50px;
+    width: 60%;
 }
 
 .edu-icon img {
@@ -283,31 +285,57 @@ nav a, .resume-sidebar a{
     margin: 15px 0px 0px 50px;
     color: #999999
 }
+.skill{
+    font-family: var(--pr-f);
+    margin-top: 50px;
+    width: 100%;
+}
+.skill h1 {
+    color: #3050d0;
+    font-size: 40px;
+}
 
+.skill-main-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+.skill-main-box .skill-box{
+    padding: 5%;
+    box-shadow: 10px 5px 50px#c2c0c0;
+    border-radius: 25px;
+    font: var(--pr-f);
+    font-weight: 700;
+    /* margin: 20px; */
+    color: #333232;
+    width: 15%;
+    height: fit-content;
+    box-sizing: content-box;
+    
+}
+/* section.edu-details.ff.ul-skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+} */
+
+.projects {
+    font-family: var(--pr-f);
+}
 .skill-box {
     padding: 50px;
     box-shadow: 10px 5px 50px#c2c0c0;
     border-radius: 25px;
     font: var(--pr-f);
     font-weight: 700;
-    margin: 0px 20px;
+    margin: 20px;
     color: #333232;
-    width: 25%;
+    width: 20%;
     height: 250px;
 
 }
-
-.skill-box-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.projects {
-    font-family: var(--pr-f);
-    height: 1200px;
-}
-
 .projects-sections-title {
     text-align: center;
     font-size: 50px;
@@ -387,8 +415,14 @@ nav a, .resume-sidebar a{
 
 .project-box-container {
     margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
-
+.contact {
+    font-family: var(--pr-f);
+    width: 100%;
+}
 .long-image {
     width: 100%;
     height: 350px;
@@ -397,11 +431,10 @@ nav a, .resume-sidebar a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 30px;
 }
 
-.contact {
-    font-family: var(--pr-f);
-}
+
 
 .long-image h1 {
     color: white;
@@ -435,19 +468,21 @@ nav a, .resume-sidebar a{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 
 }
 
 .contact-item {
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.26);
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 26%);
     width: 20%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 25px;
+    padding: 5px;
     margin: 8px;
-    height: 300px;
+    height: 200px;
+    box-sizing: content-box;
 }
 
 .contact-details-container img {
@@ -540,6 +575,7 @@ footer {
     color: white;
     font-family: var(--pr-f);
     box-sizing: border-box;
+    margin-top: 30px;
 
 }
 
@@ -588,12 +624,14 @@ footer .info>* {
 footer .questions a,.links ul li a {
     margin: 0px;
     color: white !important;
+    word-break: break-all;
 
 }
 .socials{
    display: flex;
    justify-content: center;
    align-items: center;
+   
 }
 .social-img-group{
     display: flex;
