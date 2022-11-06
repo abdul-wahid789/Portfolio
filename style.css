@@ -133,7 +133,7 @@ nav a, .resume-sidebar a{
 
 .self-img img {
     object-fit: cover;
-    height: 85vh;
+    width: 80%;
 }
 
 .about-me-text {
