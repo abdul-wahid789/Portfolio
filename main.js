@@ -1,4 +1,4 @@
-const resume_sections = document.querySelectorAll('section.edu,section.experience');
+const resume_sections = document.querySelectorAll('section.edu,section.experience,section.skill');
 const main_sections = document.querySelectorAll("#home-section,section.about-me,section.resume-con,section.projects,section.contact")
 const resume_nav = document.querySelectorAll(".resume-sidebar ul li a");
 const main_nav = document.querySelectorAll("nav ul li a");
@@ -29,7 +29,7 @@ window.addEventListener('scroll', () => {
     resume_sections.forEach((section) => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight
-        if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
+        if (pageYOffset >= (sectionTop - sectionHeight/2)) {
             current = section.getAttribute('id')
         }
     })
@@ -39,6 +39,11 @@ window.addEventListener('scroll', () => {
             li.classList.add("resume-sidebar-active")
     })
 })
+
+
+
+
+
 function sendEmail() {
     let name = document.getElementById("name").value
     let email = document.getElementById("email").value
