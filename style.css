@@ -693,13 +693,10 @@ html{
         width: 50%;
     }
 }
-
-
 .container-large:hover{
     background-color: #3e65ff;
     color: white;
     transition: background-color 0.3s ease-in;
-  
 }
 
 .container-large:hover a, 
